@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="demo.mapper.userMapper" >
+    <sql id="List" >
+        id,
+        username,
+        password,
+        chargeType,
+        accessCount
+    </sql>
+
+    <!--用户登录-->
+    <select id="userLogin" parameterType="user" resultType="user">
+        SELECT <include refid="List" /> FROM user WHERE username = #{username} AND password = #{password}
+    </select>
+
+    <!--注册-->
+    <insert id="addUser" parameterType="user" useGeneratedKeys="false" keyProperty="id">
+        INSERT INTO user (username,password,chargeType) VALUES (#{username},#{password},#{chargeType})
+    </insert>
+
+    <!--修改个人信息-->
+    <select id="modifyUser" parameterType="user" resultType="user">
+        UPDATE user SET chargeType = #{chargeType},accessCount = #{accessCount} WHERE id = #{id};
+    </select>
+
+    <!--修改使用次数-->
+    <select id="count" parameterType="string" >
+        UPDATE user SET accessCount = accessCount + 1 WHERE username = #{username};
+    </select>
+
+    <!--通过id获取用户信息-->
+    <select id="findUserById" parameterType="user" resultType="user">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+
+    <!--通过username获取用户信息-->
+    <select id="findUserByUsername" parameterType="user" resultType="user">
+        SELECT * FROM user WHERE username = #{username}
+    </select>
+
+    <resultMap id="BaseMap" type="demo.entity.user">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+        <result column="chargeType" property="chargeType" jdbcType="VARCHAR" />
+        <result column="accessCount" property="accessCount" jdbcType="INTEGER" />
+    </resultMap>
+
+</mapper>

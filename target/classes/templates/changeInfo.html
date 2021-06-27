@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>修改用户信息</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+        //提交用户信息修改
+        function changeInfo() {
+            var user = {
+                "chargeType": $("#chargeType").val(),
+                "accessCount": $("#accessCount").val()
+            };
+            console.log(user);
+            var _url = "/user/handleInfo";
+            $.ajax({
+                url: _url,
+                type: "POST",
+                data: user,
+                async: false
+            }).done(function () {
+                    alert("修改信息成功");
+            }).fail(function (res) {
+                alert("ajax失败");
+            });
+            window.location.href = "/user/homepage";
+        }
+    </script>
+</head>
+<body>
+<div style="text-align: center">
+    <form role="form" class="well" style="width: 400px; margin: 150px auto auto;" name="form"
+    action="/user/showInfo" method="post">
+        <h2 style="text-align:center;">修改用户信息</h2>
+
+        <div class="form-group">
+            <label>
+                <input name="chargeType" id="chargeType" type="text" class="form-control" placeholder="修改资费方式"/>
+            </label>
+        </div>
+        <br/>
+		<br/>
+        <div class="form-group">
+            <label>
+                <input name="age" id="age" type="text" class="form-control" placeholder="当年使用次数"/>
+            </label>
+        </div>
+        <br/>
+        <input type="submit" value="提交修改资料" onclick="changeInfo()" class="btn btn-block">
+    </form>
+</div>
+
+</body>
+</html>

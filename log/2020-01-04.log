@@ -1,0 +1,200 @@
+2020-01-04 02:51:58.434 [test housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - test - Thread starvation or clock leap detected (housekeeper delta=3h21s118ms67µs800ns).
+2020-01-04 09:31:27.750 [test housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - test - Thread starvation or clock leap detected (housekeeper delta=6h39m32s385ms643µs100ns).
+2020-01-04 09:40:14.504 [restartedMain] INFO  demo.DemoApplication - Starting DemoApplication on LAPTOP-BDPGP8II with PID 10332 (started by 小可爱 in C:\Users\86157\Desktop\demo - o)
+2020-01-04 09:40:14.505 [restartedMain] INFO  demo.DemoApplication - No active profile set, falling back to default profiles: default
+2020-01-04 09:40:14.563 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d202ac1: startup date [Sat Jan 04 09:40:14 CST 2020]; root of context hierarchy
+2020-01-04 09:40:17.016 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-04 09:40:18.198 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2259135b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-04 09:40:19.090 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-01-04 09:40:19.118 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-04 09:40:19.138 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-04 09:40:19.147 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-04 09:40:19.158 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-01-04 09:40:19.160 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-01-04 09:40:19.160 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-01-04 09:40:19.169 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-01-04 09:40:19.390 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-04 09:40:19.391 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4828 ms
+2020-01-04 09:40:19.756 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-01-04 09:40:19.772 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-04 09:40:19.773 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-04 09:40:19.773 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-04 09:40:19.773 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-04 09:40:20.717 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 09:40:21.260 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d202ac1: startup date [Sat Jan 04 09:40:14 CST 2020]; root of context hierarchy
+2020-01-04 09:40:21.419 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getInfo]}" onto public java.lang.String demo.controller.UserLoginController.getInfo(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:40:21.420 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/registerResult]}" onto public java.lang.String demo.controller.UserLoginController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-01-04 09:40:21.421 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/handleInfo]}" onto public void demo.controller.UserLoginController.putUser(demo.entity.user,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-01-04 09:40:21.421 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginResult]}" onto public java.lang.String demo.controller.UserLoginController.loginHandler(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.fasterxml.jackson.core.JsonProcessingException
+2020-01-04 09:40:21.422 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String demo.controller.UserLoginController.userLogin()
+2020-01-04 09:40:21.422 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changeInfo]}" onto public java.lang.String demo.controller.UserLoginController.changeInfo()
+2020-01-04 09:40:21.422 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showName]}" onto public java.lang.String demo.controller.UserLoginController.showName(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:40:21.422 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/homepage]}" onto public java.lang.String demo.controller.UserLoginController.homepage()
+2020-01-04 09:40:21.423 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showInfo]}" onto public java.lang.String demo.controller.UserLoginController.showInfo()
+2020-01-04 09:40:21.424 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginOut]}" onto public java.lang.String demo.controller.UserLoginController.loginOut(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:40:21.424 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register]}" onto public java.lang.String demo.controller.UserLoginController.userRegister()
+2020-01-04 09:40:21.425 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:40:21.428 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-04 09:40:21.457 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 09:40:21.457 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 09:40:22.611 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-01-04 09:40:22.661 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-01-04 09:40:22.663 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-04 09:40:22.668 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-04 09:40:22.741 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-04 09:40:22.758 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-01-04 09:40:22.817 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-04 09:40:22.832 [restartedMain] INFO  demo.DemoApplication - Started DemoApplication in 8.917 seconds (JVM running for 10.344)
+2020-01-04 09:55:47.470 [restartedMain] INFO  demo.DemoApplication - Starting DemoApplication on LAPTOP-BDPGP8II with PID 27392 (started by 小可爱 in C:\Users\86157\Desktop\demo - o)
+2020-01-04 09:55:47.472 [restartedMain] INFO  demo.DemoApplication - No active profile set, falling back to default profiles: default
+2020-01-04 09:55:47.520 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71709c26: startup date [Sat Jan 04 09:55:47 CST 2020]; root of context hierarchy
+2020-01-04 09:55:49.713 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-04 09:55:50.487 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$668542fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-04 09:55:51.358 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-01-04 09:55:51.378 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-04 09:55:51.396 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-04 09:55:51.407 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-04 09:55:51.417 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-01-04 09:55:51.419 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-01-04 09:55:51.420 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-01-04 09:55:51.422 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-01-04 09:55:51.667 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-04 09:55:51.668 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4148 ms
+2020-01-04 09:55:51.991 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-01-04 09:55:51.991 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-04 09:55:51.991 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-04 09:55:51.991 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-04 09:55:52.003 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-04 09:55:52.659 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 09:55:52.972 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@71709c26: startup date [Sat Jan 04 09:55:47 CST 2020]; root of context hierarchy
+2020-01-04 09:55:53.062 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getInfo]}" onto public java.lang.String demo.controller.UserLoginController.getInfo(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:55:53.064 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/registerResult]}" onto public java.lang.String demo.controller.UserLoginController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-01-04 09:55:53.064 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showName]}" onto public java.lang.String demo.controller.UserLoginController.showName(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:55:53.065 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/homepage]}" onto public java.lang.String demo.controller.UserLoginController.homepage()
+2020-01-04 09:55:53.065 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginOut]}" onto public java.lang.String demo.controller.UserLoginController.loginOut(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:55:53.065 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changeInfo]}" onto public java.lang.String demo.controller.UserLoginController.changeInfo()
+2020-01-04 09:55:53.065 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/handleInfo]}" onto public void demo.controller.UserLoginController.putUser(demo.entity.user,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-01-04 09:55:53.066 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showInfo]}" onto public java.lang.String demo.controller.UserLoginController.showInfo()
+2020-01-04 09:55:53.066 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginResult]}" onto public java.lang.String demo.controller.UserLoginController.loginHandler(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.fasterxml.jackson.core.JsonProcessingException
+2020-01-04 09:55:53.067 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String demo.controller.UserLoginController.userLogin()
+2020-01-04 09:55:53.067 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register]}" onto public java.lang.String demo.controller.UserLoginController.userRegister()
+2020-01-04 09:55:53.072 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-04 09:55:53.073 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-04 09:55:53.105 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 09:55:53.105 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 09:55:54.119 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-01-04 09:55:54.174 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-01-04 09:55:54.175 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-04 09:55:54.181 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-04 09:55:54.195 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-04 09:55:54.207 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-01-04 09:55:54.222 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-04 09:55:54.223 [restartedMain] INFO  demo.DemoApplication - Started DemoApplication in 7.391 seconds (JVM running for 8.884)
+2020-01-04 09:56:08.835 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-04 09:56:08.835 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-04 09:56:08.953 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 118 ms
+2020-01-04 09:56:14.516 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - test - Starting...
+2020-01-04 09:56:15.788 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - test - Start completed.
+2020-01-04 09:56:17.137 [http-nio-8080-exec-3] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [980] milliseconds.
+2020-01-04 10:13:04.239 [restartedMain] INFO  demo.DemoApplication - Starting DemoApplication on LAPTOP-BDPGP8II with PID 29888 (started by 小可爱 in C:\Users\86157\Desktop\demo - o)
+2020-01-04 10:13:04.246 [restartedMain] INFO  demo.DemoApplication - No active profile set, falling back to default profiles: default
+2020-01-04 10:13:04.304 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4673431a: startup date [Sat Jan 04 10:13:04 CST 2020]; root of context hierarchy
+2020-01-04 10:13:06.095 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-04 10:13:06.905 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a574526] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-04 10:13:07.665 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-01-04 10:13:07.699 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-04 10:13:07.723 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-04 10:13:07.728 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-04 10:13:07.740 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-01-04 10:13:07.742 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-01-04 10:13:07.743 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-01-04 10:13:07.748 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-01-04 10:13:07.912 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-04 10:13:07.912 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3608 ms
+2020-01-04 10:13:08.103 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-01-04 10:13:08.109 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-04 10:13:08.112 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-04 10:13:08.112 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-04 10:13:08.112 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-04 10:13:08.720 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:13:09.312 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4673431a: startup date [Sat Jan 04 10:13:04 CST 2020]; root of context hierarchy
+2020-01-04 10:13:09.370 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getInfo]}" onto public java.lang.String demo.controller.UserLoginController.getInfo(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:13:09.371 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/registerResult]}" onto public java.lang.String demo.controller.UserLoginController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-01-04 10:13:09.372 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changeInfo]}" onto public java.lang.String demo.controller.UserLoginController.changeInfo()
+2020-01-04 10:13:09.372 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/handleInfo]}" onto public void demo.controller.UserLoginController.putUser(demo.entity.user,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-01-04 10:13:09.372 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String demo.controller.UserLoginController.userLogin()
+2020-01-04 10:13:09.372 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginOut]}" onto public java.lang.String demo.controller.UserLoginController.loginOut(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:13:09.372 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showName]}" onto public java.lang.String demo.controller.UserLoginController.showName(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:13:09.373 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showInfo]}" onto public java.lang.String demo.controller.UserLoginController.showInfo()
+2020-01-04 10:13:09.373 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/homepage]}" onto public java.lang.String demo.controller.UserLoginController.homepage()
+2020-01-04 10:13:09.373 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register]}" onto public java.lang.String demo.controller.UserLoginController.userRegister()
+2020-01-04 10:13:09.373 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginResult]}" onto public java.lang.String demo.controller.UserLoginController.loginHandler(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.fasterxml.jackson.core.JsonProcessingException
+2020-01-04 10:13:09.375 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:13:09.375 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-04 10:13:09.410 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:13:09.411 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:13:10.236 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-01-04 10:13:10.303 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-01-04 10:13:10.306 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-04 10:13:10.310 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-04 10:13:10.333 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-04 10:13:10.348 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-01-04 10:13:10.371 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-04 10:13:10.373 [restartedMain] INFO  demo.DemoApplication - Started DemoApplication in 6.71 seconds (JVM running for 8.104)
+2020-01-04 10:13:29.050 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-04 10:13:29.051 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-04 10:13:29.153 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 102 ms
+2020-01-04 10:13:30.146 [http-nio-8080-exec-1] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [918] milliseconds.
+2020-01-04 10:13:36.535 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - test - Starting...
+2020-01-04 10:13:37.524 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - test - Start completed.
+2020-01-04 10:21:32.779 [restartedMain] INFO  demo.DemoApplication - Starting DemoApplication on LAPTOP-BDPGP8II with PID 32132 (started by 小可爱 in C:\Users\86157\Desktop\demo - o)
+2020-01-04 10:21:32.781 [restartedMain] INFO  demo.DemoApplication - No active profile set, falling back to default profiles: default
+2020-01-04 10:21:32.859 [restartedMain] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c1fd7a8: startup date [Sat Jan 04 10:21:32 CST 2020]; root of context hierarchy
+2020-01-04 10:21:34.239 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-04 10:21:34.775 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80d0ed50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-04 10:21:35.310 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-01-04 10:21:35.331 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-04 10:21:35.344 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-01-04 10:21:35.345 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+2020-01-04 10:21:35.352 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-01-04 10:21:35.353 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-01-04 10:21:35.353 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-01-04 10:21:35.354 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-01-04 10:21:35.627 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-01-04 10:21:35.628 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2770 ms
+2020-01-04 10:21:35.915 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2020-01-04 10:21:35.917 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-04 10:21:35.922 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-04 10:21:35.922 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-04 10:21:35.926 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-04 10:21:36.385 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:21:36.774 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c1fd7a8: startup date [Sat Jan 04 10:21:32 CST 2020]; root of context hierarchy
+2020-01-04 10:21:36.848 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getInfo]}" onto public java.lang.String demo.controller.UserLoginController.getInfo(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:21:36.849 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/registerResult]}" onto public java.lang.String demo.controller.UserLoginController.addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-01-04 10:21:36.849 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register]}" onto public java.lang.String demo.controller.UserLoginController.userRegister()
+2020-01-04 10:21:36.850 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginResult]}" onto public java.lang.String demo.controller.UserLoginController.loginHandler(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws com.fasterxml.jackson.core.JsonProcessingException
+2020-01-04 10:21:36.850 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/homepage]}" onto public java.lang.String demo.controller.UserLoginController.homepage()
+2020-01-04 10:21:36.850 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changeInfo]}" onto public java.lang.String demo.controller.UserLoginController.changeInfo()
+2020-01-04 10:21:36.850 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showInfo]}" onto public java.lang.String demo.controller.UserLoginController.showInfo()
+2020-01-04 10:21:36.850 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/loginOut]}" onto public java.lang.String demo.controller.UserLoginController.loginOut(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:21:36.851 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/handleInfo]}" onto public void demo.controller.UserLoginController.putUser(demo.entity.user,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2020-01-04 10:21:36.852 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String demo.controller.UserLoginController.userLogin()
+2020-01-04 10:21:36.852 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/showName]}" onto public java.lang.String demo.controller.UserLoginController.showName(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:21:36.853 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-04 10:21:36.854 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-04 10:21:36.884 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:21:36.884 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-04 10:21:37.503 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-01-04 10:21:37.536 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-01-04 10:21:37.537 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-04 10:21:37.541 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-04 10:21:37.553 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-04 10:21:37.562 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-01-04 10:21:37.580 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-04 10:21:37.584 [restartedMain] INFO  demo.DemoApplication - Started DemoApplication in 5.586 seconds (JVM running for 7.029)
+2020-01-04 10:25:15.660 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-04 10:25:15.661 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-04 10:25:15.708 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2020-01-04 10:25:20.444 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - test - Starting...
+2020-01-04 10:25:21.477 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - test - Start completed.
+2020-01-04 10:25:22.618 [http-nio-8080-exec-2] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [945] milliseconds.

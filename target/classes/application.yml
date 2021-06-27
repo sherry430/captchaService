@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+    datasource: #存储用户信息的数据库zh；用户表captcha;
+        name: test
+        url: jdbc:mysql://localhost:3306/zh
+        username: root
+        password: dh6334876
+        driver-class-name: com.mysql.jdbc.Driver
+    redis:
+        database: 0
+        host: localhost
+        port: 6379
+        jedis:
+            pool:
+                max-idle: 8
+                min-idle: 0
+                max-active: 8
+                max-wait: -1
+        timeout: 60000
+        password:
+
+mybatis:
+  type-aliases-package: demo.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+      cache-enabled: true
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <mata charset="UTF-8" />
+    <title>个人信息</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+
+
+    <script>
+        $ (document).ready(function() {
+            var _url = "/user/getInfo";
+            $.ajax({
+                url: _url,
+                type: "GET",
+                async: false,
+                success: function (user) {
+                    if (user === "fail") {
+                        alert("fail");
+                        return false;
+                    } else {
+                        var userInfo = $.parseJSON(user);
+                        $(".username" ).html(userInfo.username);
+                        $(".chargeType" ).html(userInfo.chargeType);
+                        $(".accessCount" ).html(userInfo.accessCount);
+                       // alert("show info success");
+                        console.log("成功获取后台数据");
+                        //window.location.replace("/user/homepage");
+                    }
+                },
+                fail: function () {
+                    alert("ajax失败");
+                }
+            })
+        });
+    </script>
+
+</head>
+
+</body>
+<form id="form" role="form" class="well" style="width: 400px; margin: 150px auto auto;"
+      action="" method="post">
+    <h2 style="text-align:center;">用户信息</h2>
+    <br/>
+    <div class="form-group">
+        <label >
+            <label>用户名</label>
+            <label>
+                <span class="username"> </span>
+            </label>
+        </label>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label>
+            <label>资费类型</label>
+            <span class="chargeType"></span>
+        </label>
+    </div>
+    <br/>
+    <div class="form-group">
+        <label>
+            <label>当前使用次数</label>
+            <span class="accessCount"></span>
+        </label>
+    </div>
+
+    <a class="btn btn-sm btn-block" style="text-align:right;" href="/user/changeInfo">
+        <h6>修改资料</h6>
+    </a>
+
+    <a class="btn btn-sm btn-block" style="text-align:right;" href="/user/homepage">
+        <h6>返回主页</h6>
+    </a>
+</form>
+</body>
+
+</html>

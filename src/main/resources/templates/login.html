@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>LoginPage</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+
+
+</head>
+<body>
+<div style="text-align: center">
+    <form role="form" class="well" style="width: 400px; margin: 150px auto auto;" name="form"
+          action="/user/loginResult" method="post">
+        <h2 style="text-align:center;">用户登录</h2>
+        <br/>
+        <div class="form-group">
+            <label>
+                <input name="username" id="username" type="text" class="form-control" placeholder="请在此输入用户名"/>
+            </label>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label>
+                <input name="password" id="password" type="password" class="form-control" placeholder="请在此输入密码"/>
+            </label>
+        </div>
+        <br/>
+        <input type="submit" value="登录"  class="btn btn-block">
+        <a class="btn btn-sm btn-block" style="text-align:right;" href="/user/register">
+            <h6>还没有账户？前去注册</h6>
+        </a>
+    </form>
+</div>
+</body>
+</html>
